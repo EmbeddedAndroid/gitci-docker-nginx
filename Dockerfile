@@ -12,3 +12,4 @@ RUN rm /etc/nginx/conf.d/default.conf
 RUN mkdir -p /etc/nginx/sites-enabled/
 COPY websites/artifacts.conf /etc/nginx/sites-enabled/00-artifacts.conf
 COPY websites/hawkbit.conf /etc/nginx/sites-enabled/01-hawkbit.conf
+COPY websites/lava.conf /etc/nginx/sites-enabled/01-lava.conf
